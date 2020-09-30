@@ -4,9 +4,15 @@
     <div
         id="<?= $this->getId() ?>"
         class="field-google-place">
-        <div id="<?= $this->getId('textarea') ?>-div" style="height: 300px; width: 100%"></div>
         <input
-            type="hidden"
+            id="pac-input"
+            class="form-control"
+            type="text"
+            placeholder="Search location"
+        />
+            <div id="<?= $this->getId('textarea') ?>-div" style="height: 500px; width: 100%"></div>
+            <input
+                type="hidden"
             name="<?= $name ?>"
             id="<?= $this->getId('textarea') ?>"
             value="<?= e($value) ?>"
